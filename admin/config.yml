@@ -21,9 +21,21 @@ collections:
   - name: "videos"
     label: "施工视频"
     folder: "api/v1/entities/video"
+    extension: "json"
+    format: "json"
     create: true
+    identifier_field: "title"
     slug: "{{slug}}"
     fields:
       - {label: "视频标题", name: "title", widget: "string"}
       - {label: "YouTube 视频链接", name: "url", widget: "string"}
-      - {label: "服务类别", name: "category", widget: "select", options: ["水电维修安装", "家庭装修维修", "家电与家具安装", "割草修树庭院清理", "广告标识维修", "包年房屋维护"]}
+      - label: "服务类别"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "水电维修安装", value: "plumbing_electric" }
+          - { label: "家庭装修维修", value: "home_repair" }
+          - { label: "家电与家具安装", value: "appliance_furniture" }
+          - { label: "割草修树庭院清理", value: "lawn_yard" }
+          - { label: "广告标识维修", value: "signage" }
+          - { label: "包年房屋维护", value: "annual_maintenance" }
