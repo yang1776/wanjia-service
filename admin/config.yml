@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  site_domain: fascinating-eclair-ca077d.netlify.app
   branch: main
 
 media_folder: "assets/uploads"
