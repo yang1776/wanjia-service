@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  site_domain: fascinating-eclair-ca077d.netlify.app
+  site_domain: wanjiaxiu.us
   branch: main
 
 media_folder: "assets/uploads"
@@ -17,3 +17,13 @@ collections:
       - {label: "发布日期", name: "date", widget: "datetime"}
       - {label: "封面图", name: "image", widget: "image", required: false}
       - {label: "正文内容", name: "body", widget: "markdown"}
+
+  - name: "videos"
+    label: "施工视频"
+    folder: "api/v1/entities/video"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "视频标题", name: "title", widget: "string"}
+      - {label: "YouTube 视频链接", name: "url", widget: "string"}
+      - {label: "服务类别", name: "category", widget: "select", options: ["水电维修安装", "家庭装修维修", "家电与家具安装", "割草修树庭院清理", "广告标识维修", "包年房屋维护"]}
