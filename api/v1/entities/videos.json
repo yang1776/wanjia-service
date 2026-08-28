@@ -1,11 +1,14 @@
-[
-  {
-    "id": "1",
-    "title": "法拉盛割草修枝清理庭院，街面杂草清理",
-    "description": "专业庭院清理、割草修枝服务",
-    "youtube_url": "https://www.youtube.com/watch?v=4Lg0ySBCjAI",
-    "category": "lawn_yard",
-    "is_visible": true,
-    "sort_order": 1
-  }
-]
+{
+  "data": [
+    {
+      "id": "1",
+      "title": "法拉盛割草修枝清理庭院，街面杂草清理",
+      "description": "专业庭院清理、割草修枝服务",
+      "youtube_url": "https://www.youtube.com/watch?v=4Lg0ySBCjAI",
+      "category": "lawn_yard",
+      "status": "published",
+      "is_visible": true,
+      "sort_order": 1
+    }
+  ]
+}
